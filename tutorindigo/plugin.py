@@ -23,20 +23,17 @@ config: t.Dict[str, t.Dict[str, t.Any]] = {
     # Add here your new settings
     "defaults": {
         "VERSION": __version__,
-        "WELCOME_MESSAGE": "The place for all your online learning",
+        "WELCOME_MESSAGE": "La casa del aprendizaje en línea",  # "The home of online learning" in Spanish
         "PRIMARY_COLOR": "#15376D",  # Indigo
         "ENABLE_DARK_TOGGLE": True,
         # Footer links are dictionaries with a "title" and "url"
         # To remove all links, run:
         # tutor config save --set INDIGO_FOOTER_NAV_LINKS=[]
         "FOOTER_NAV_LINKS": [
-            {"title": "About Us", "url": "/about"},
+            {"title": "Acerca de Nosotros", "url": "/about"},
             {"title": "Blog", "url": "/blog"},
-            {"title": "Donate", "url": "/donate"},
-            {"title": "Terms of Service", "url": "/tos"},
-            {"title": "Privacy Policy", "url": "/privacy"},
-            {"title": "Help", "url": "/help"},
-            {"title": "Contact Us", "url": "/contact"},
+            {"title": "Ayuda", "url": "/help"},
+            {"title": "Contactanos", "url": "/contact"},
         ],
     },
     "unique": {},
