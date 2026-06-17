@@ -29,6 +29,14 @@
       ## which are not technically powered by OpenEdX.
       % if not hide_openedx_link:
       <ul class="logo-list">
+        <li>
+          <a>
+            <img src="${static.url('images/principal-logo.png')}" alt="Campusaber" width="80" />
+          </a>
+        </li>
+      </ul>
+      <!--
+      <ul class="logo-list">
         <li>Powered by:</li>
         <li>
           <a href="https://docs.tutor.edly.io" rel="noopener" target="_blank">
@@ -42,6 +50,7 @@
         </li>
       </ul>
     </div>
+    -->
     {% if INDIGO_FOOTER_NAV_LINKS %}
     <nav class="nav-colophon" aria-label="${_('About')}">
       <ol>
@@ -92,6 +101,7 @@
         ## through an API to partner sites (such as marketing sites or blogs),
         ## which are not technically powered by OpenEdX.
         % if not hide_openedx_link:
+        <!--
         <ul class="logo-list">
           <li>Powered by:</li>
           <li>
@@ -105,6 +115,14 @@
             </a>
           </li>
         </ul>
+        -->
+        <ul class="logo-list">
+        <li>
+          <a>
+            <img src="${static.url('images/principal-logo.png')}" alt="Campusaber" width="80" />
+          </a>
+        </li>
+      </ul>
       </div>
       {% if INDIGO_FOOTER_NAV_LINKS %}
       <nav class="nav-colophon" aria-label="${_('About')}">
